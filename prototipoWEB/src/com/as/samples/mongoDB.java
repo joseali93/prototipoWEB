@@ -98,7 +98,7 @@ public class mongoDB {
 			
 	}
 	
-	public String consultaids(String id){
+	public String consultaids(){
 		MongoClient mongoClient = null;
 		BasicDBObject resultadoconsulta = null;
 		String mensaje = "";

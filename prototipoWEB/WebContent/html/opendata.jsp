@@ -148,7 +148,7 @@ table#t01 th {
 								mongoDB mdb = new mongoDB();
 								//out.write("<table> <tr> <th> Nombre set </th> <th> Token </th> </tr>");
 								
-								out.write(mdb.consultaids("mpka-keq9"));						
+								out.write(mdb.consultaids());						
 							%>
 							
 							<h2>Complete</h2>
