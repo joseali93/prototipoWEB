@@ -46,13 +46,13 @@
               <div class="menu_section">
                 <h3>General</h3>
                 <ul class="nav side-menu">
-                  <li><a href="/prototipoWEB/html/IngresoDatos.html"><i class="fa fa-database"></i> Ingreso datos </a>
+                  <li><a href="/prototipoWEB/html/IngresoDatos.jsp"><i class="fa fa-database"></i> Ingreso datos </a>
                    
                   </li>
                   <li><a href="/prototipoWEB/Metricas"><i class="fa fa-bar-chart"></i> Calidad </span></a>
                    
                   </li>
-                  <li><a href="/prototipoWEB/html/opendata.jsp"><i class="fa fa-check-square-o"></i> Madurez </a>
+                  <li><a href="/prototipoWEB/html/opendata.html"><i class="fa fa-check-square-o"></i> Madurez </a>
                    
                   </li>
                   

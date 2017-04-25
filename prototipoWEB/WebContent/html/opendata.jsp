@@ -79,7 +79,7 @@ table#t01 th {
 						<div class="menu_section">
 							<h3>General</h3>
 							<ul class="nav side-menu">
-								<li><a href="/prototipoWEB/html/IngresoDatos.html"><i
+								<li><a href="/prototipoWEB/html/ingresoDatos.jsp"><i
 										class="fa fa-database"></i> Ingreso datos </a></li>
 								<li><a href="/prototipoWEB/Metricas"><i
 										class="fa fa-bar-chart"></i> Calidad </span></a></li>
@@ -153,45 +153,30 @@ table#t01 th {
 							
 							<h2>Complete</h2>
 							<br>
-							<iframe
-								src="http://Jose-XPS:8980/faces/restricted/embed.xhtml?serviceId=completos+general&amp;width=400&amp;height=300"
-								width="400" height="300"></iframe>
+							 <iframe  scrolling="no" style="border-width:0px;" src="http://Jose-XPS:8980/api/rest/public/process/completos%20general?"  width="550" height="400"></iframe>
 							<br>
 							<h2>Primary</h2>
-							<iframe
-								src="http://Jose-XPS:8980/faces/restricted/embed.xhtml?serviceId=primarios+general&amp;width=400&amp;height=300"
-								width="400" height="300"></iframe>
+							 <iframe  scrolling="no" style="border-width:0px;" src="http://Jose-XPS:8980/api/rest/public/process/primarios%20general?"  width="550" height="400"></iframe>
 							<br>
 							<h2>Timely</h2>
 							<br>
-							<iframe
-								src="http://Jose-XPS:8980/faces/restricted/embed.xhtml?serviceId=timely&amp;width=400&amp;height=300"
-								width="400" height="300"></iframe>
+							 <iframe  scrolling="no" style="border-width:0px;" src="http://Jose-XPS:8980/api/rest/public/process/timely?"  width="550" height="400"></iframe>
 							<br>
 							<h2>Accessible</h2>
-							<iframe
-								src="http://Jose-XPS:8980/faces/restricted/embed.xhtml?serviceId=accesibles&amp;width=400&amp;height=300"
-								width="400" height="300"></iframe>
+							 <iframe  scrolling="no" style="border-width:0px;" src="http://Jose-XPS:8980/api/rest/public/process/accesibles?"  width="550" height="400"></iframe>
 							<br>
 							<h2>Machine Processable</h2>
-							<iframe
-								src="http://Jose-XPS:8980/faces/restricted/embed.xhtml?serviceId=machine_proccesable&amp;width=400&amp;height=300"
-								width="400" height="300"></iframe>
+							<iframe  scrolling="no" style="border-width:0px;" src="http://Jose-XPS:8980/api/rest/public/process/machine_proccesable?"  width="550" height="400"></iframe>
 							<br>
 							<h2>Non-Discriminatory</h2>
-							<iframe
-								src="http://Jose-XPS:8980/faces/restricted/embed.xhtml?serviceId=nodiscrimimatorio+general&amp;width=400&amp;height=300"
-								width="400" height="300"></iframe>
+							<iframe  scrolling="no" style="border-width:0px;" src="http://Jose-XPS:8980/api/rest/public/process/nodiscrimimatorio%20general?"  width="550" height="400"></iframe>
 							<br>
 							<h2>Non-Proprietary</h2>
-							<iframe
-								src="http://Jose-XPS:8980/faces/restricted/embed.xhtml?serviceId=no+propietario+general&amp;width=400&amp;height=300"
-								width="400" height="300"></iframe>
+							<iframe  scrolling="no" style="border-width:0px;" src="http://Jose-XPS:8980/api/rest/public/process/no%20propietario%20general?"  width="550" height="400"></iframe>
 							<br>
 							<h2>License Free</h2>
-							<iframe
-								src="http://Jose-XPS:8980/faces/restricted/embed.xhtml?serviceId=license+general&amp;width=400&amp;height=300"
-								width="400" height="300"></iframe>
+							<iframe  scrolling="no" style="border-width:0px;" src="http://Jose-XPS:8980/api/rest/public/process/license%20general?"  width="550" height="400"></iframe>
+
 							<br>
 
 
