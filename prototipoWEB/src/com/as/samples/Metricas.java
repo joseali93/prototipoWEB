@@ -68,7 +68,7 @@ public class Metricas extends HttpServlet {
 		 DBCursor cursor = collection.find();
 		 ArrayList<tokens> idesitos = new ArrayList<tokens>();
 		while(cursor.hasNext()) {
-		  //  System.out.println(cursor.next().get("id"));
+		   //System.out.println(cursor.next().get("id"));
 		    tokens ids = new tokens();
 		    ids.setTokens(cursor.next().get("id").toString());
 		    idesitos.add(ids);

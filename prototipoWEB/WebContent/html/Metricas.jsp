@@ -1,77 +1,113 @@
- <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
     pageEncoding="ISO-8859-1"%>
- <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
+    <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
 <!DOCTYPE html>
 <html lang="en">
+
   <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <!-- Meta, title, CSS, favicons, etc. -->
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="">
-    <meta name="author" content="">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>Top navbar example for Bootstrap</title>
+    <title>Prototipo </title>
 
-    <link href="http://localhost:8080/prototipoWEB/css/bootstrap.css" rel="stylesheet" />
-     <!-- FONTAWESOME STYLES-->
-    <link href="http://localhost:8080/prototipoWEB/css/font-awesome.css" rel="stylesheet" />
-        <!-- CUSTOM STYLES-->
-    <link href="http://localhost:8080/prototipoWEB/css/custom.css" rel="stylesheet" />
-     <!-- GOOGLE FONTS-->
-   <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css' />
+    <!-- Bootstrap -->
+    <link href="http://localhost:8080/prototipoWEB/vendors/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link href="http://localhost:8080/prototipoWEB/vendors/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+    <!-- NProgress -->
+    <link href="../vendors/nprogress/nprogress.css" rel="stylesheet">
+    <!-- bootstrap-progressbar -->
+    <link href="http://localhost:8080/prototipoWEB/vendors/bootstrap-progressbar/css/bootstrap-progressbar-3.3.4.min.css" rel="stylesheet">
+    <!-- bootstrap-daterangepicker -->
+    <link href="http://localhost:8080/prototipoWEB/vendors/bootstrap-daterangepicker/daterangepicker.css" rel="stylesheet">
+    
+    <!-- Custom Theme Style -->
+    <link href="http://localhost:8080/prototipoWEB/build/css/custom.min.css" rel="stylesheet">
   </head>
 
-  <body>
-  <div id="wrapper">
-    <div class="navbar navbar-inverse navbar-fixed-top">
-            <div class="adjust-nav">
-                <div class="navbar-header">
-                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".sidebar-collapse">
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                    </button>
-                    <a class="navbar-brand" href="#">
-                        <img src="http://localhost:8080/prototipoWEB/img/logo.png" />
-
-                    </a>
-                    
-                </div>
-              
-                <span class="logout-spn" >
-                  <!-- <a href="#" style="color:#fff;">LOGOUT</a>   -->
-
-                </span>
+  <body class="nav-md">
+    <div class="container body">
+      <div class="main_container">
+        <div class="col-md-3 left_col">
+          <div class="left_col scroll-view">
+            <div class="navbar nav_title" style="border: 0;">
+              <a href="index.html" class="site_title"><i class="fa fa-cogs"></i> <span>Prototipo</span></a>
             </div>
+
+            <div class="clearfix"></div>
+
+          
+            <br />
+
+            <!-- sidebar menu -->
+            <div id="sidebar-menu" class="main_menu_side hidden-print main_menu">
+              <div class="menu_section">
+                <h3>General</h3>
+                <ul class="nav side-menu">
+                  <li><a href="/prototipoWEB/html/IngresoDatos.html"><i class="fa fa-database"></i> Ingreso datos </a>
+                   
+                  </li>
+                  <li><a href="/prototipoWEB/Metricas"><i class="fa fa-bar-chart"></i> Calidad </span></a>
+                   
+                  </li>
+                  <li><a href="/prototipoWEB/html/opendata.html"><i class="fa fa-check-square-o"></i> Madurez </a>
+                   
+                  </li>
+                  
+                </ul>
+              </div>
+              
+
+            </div>
+            <!-- /sidebar menu -->
+
+            <!-- /menu footer buttons -->
+            <div class="sidebar-footer hidden-small">
+              <a data-toggle="tooltip" data-placement="top" title="Settings">
+                <span class="glyphicon glyphicon-cog" aria-hidden="true"></span>
+              </a>
+              <a data-toggle="tooltip" data-placement="top" title="FullScreen">
+                <span class="glyphicon glyphicon-fullscreen" aria-hidden="true"></span>
+              </a>
+              <a data-toggle="tooltip" data-placement="top" title="Lock">
+                <span class="glyphicon glyphicon-eye-close" aria-hidden="true"></span>
+              </a>
+              <a data-toggle="tooltip" data-placement="top" title="Logout" href="login.html">
+                <span class="glyphicon glyphicon-off" aria-hidden="true"></span>
+              </a>
+            </div>
+            <!-- /menu footer buttons -->
+          </div>
         </div>
-  
-      <nav class="navbar-default navbar-side" role="navigation">
-      <div class="sidebar-collapse">
-            
+
+        <!-- top navigation -->
+        <div class="top_nav">
+          <div class="nav_menu">
+            <nav>
+              <div class="nav toggle">
+                <a id="menu_toggle"><i class="fa fa-bars"></i></a>
+              </div>
+
+              <br>
+            </nav>
+          </div>
+        </div>
+        <!-- /top navigation -->
+
+        <!-- page content -->
+        <div class="right_col" role="main">
         
-          <ul class="nav" id="main-menu">
-             <li>
-              <a href="/prototipoWEB/html/prototipo.html"><i class="fa fa-bar-chart-o"></i>Prototipo</a>
-            </li>
-            <li class="active-link">
-              <a href="/prototipoWEB/html/IngresoDatos.html"> <i class="fa fa-desktop "></i>Ingreso datos<span class="badge"></span></a>
-            </li>
-            <li >
-              <a href="/prototipoWEB/Metricas"> <i class="fa fa-table "></i>Metricas <span class="badge"></span></a>
-            </li>
-            <li >
-              <a href="/prototipoWEB/html/opendata.html"> <i class="fa fa-bar-chart-o"> </i>Open data</a>
-            </li>
-          </ul>
         
-       </div>
-      </nav>
-    
-      <div id="page-wrapper" >
-            <div id="page-inner">
-              <div class="container">
-              <div class="jumbotron">
-              <h1>Metricas</h1>
-              <div class="text-center">
+        
+        <div class="container">
+  <h2>Prototipo</h2>
+  <div class="panel panel-default">
+    <div class="panel-heading">Calidad</div>
+    <div class="panel-body">
+    	 <div class="text-center">
                 
                  <table class="table">
                 	<tr>
@@ -149,20 +185,30 @@
                 
               </div>
           </div>
-            </div>
-      </div>      
+            
+    
+    
+    </div>
   </div>
-  <script
-  src="https://code.jquery.com/jquery-3.2.1.min.js"
-  integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
-  crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-  <script>
+</div>
+        
+          
+         
+	        		
+        </div>
+        <!-- /page content -->
 
-
-  </script>
-  
-  
+        <!-- footer content -->
+        <footer>
+          <div class="pull-right">
+            Gentelella - Bootstrap Admin Template by <a href="https://colorlib.com">Colorlib</a>
+          </div>
+          <div class="clearfix"></div>
+        </footer>
+        <!-- /footer content -->
+      </div>
+    </div>
+      
   
   <!-- Modal -->
 <div id="myModal" class="modal fade" role="dialog">
@@ -194,8 +240,15 @@
 
   </div>
 </div>
-  </body>
-  
+
+    <!-- jQuery -->
+    <script src="http://localhost:8080/prototipoWEB/vendors/jquery/dist/jquery.min.js"></script>
+    <!-- Bootstrap -->
+    <script src="http://localhost:8080/prototipoWEB/vendors/bootstrap/dist/js/bootstrap.min.js"></script>
+    <!-- FastClick -->
+    <!-- Custom Theme Scripts -->
+    <script src="http://localhost:8080/prototipoWEB/build/js/custom.min.js"></script>
+      
   <script>
   
   $('.links').click(function(){
@@ -215,4 +268,6 @@
   
   
   </script>
+
+  </body>
 </html>

@@ -1,100 +1,153 @@
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
     pageEncoding="ISO-8859-1"%>
-<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
-<html>
-<head>
-  
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <!-- Meta, title, CSS, favicons, etc. -->
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="">
-    <meta name="author" content="">
- 
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>Top navbar example for Bootstrap</title>
+    <title>Prototipo </title>
+
+    <!-- Bootstrap -->
+    <link href="http://localhost:8080/prototipoWEB/vendors/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link href="http://localhost:8080/prototipoWEB/vendors/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+    <!-- NProgress -->
+    <link href="../vendors/nprogress/nprogress.css" rel="stylesheet">
+    <!-- bootstrap-progressbar -->
+    <link href="http://localhost:8080/prototipoWEB/vendors/bootstrap-progressbar/css/bootstrap-progressbar-3.3.4.min.css" rel="stylesheet">
+    <!-- bootstrap-daterangepicker -->
+    <link href="http://localhost:8080/prototipoWEB/vendors/bootstrap-daterangepicker/daterangepicker.css" rel="stylesheet">
     
-    <!-- BOOTSTRAP STYLES-->
-    <link href="../css/bootstrap.css" rel="stylesheet" />
-     <!-- FONTAWESOME STYLES-->
-    <link href="../css/font-awesome.css" rel="stylesheet" />
-        <!-- CUSTOM STYLES-->
-    <link href="../css/custom.css" rel="stylesheet" />
-     <!-- GOOGLE FONTS-->
-   <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css' />
-	
-    <!-- Custom styles for this template -->
-    <link href="navbar-top.css" rel="stylesheet">
+    <!-- Custom Theme Style -->
+    <link href="../build/css/custom.min.css" rel="stylesheet">
   </head>
-<body>
-<div id="wrapper">
-		<div class="navbar navbar-inverse navbar-fixed-top">
-            <div class="adjust-nav">
-                <div class="navbar-header">
-                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".sidebar-collapse">
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                    </button>
-                    <a class="navbar-brand" href="#">
-                        <img src="../img/logo.png" />
 
-                    </a>
-                    
-                </div>
-              
-                <span class="logout-spn" >
-                  <!-- <a href="#" style="color:#fff;">LOGOUT</a>   -->
-
-                </span>
+  <body class="nav-md">
+    <div class="container body">
+      <div class="main_container">
+        <div class="col-md-3 left_col">
+          <div class="left_col scroll-view">
+            <div class="navbar nav_title" style="border: 0;">
+              <a href="index.html" class="site_title"><i class="fa fa-cogs"></i> <span>Prototipo</span></a>
             </div>
-        </div>
-	
-	    <nav class="navbar-default navbar-side" role="navigation">
-	    <div class="sidebar-collapse">
-	          
-	      
-	        <ul class="nav" id="main-menu">
-	           <li>
-	          	<a href="/prototipoWEB/html/prototipo.html"><i class="fa fa-bar-chart-o"></i>Prototipo</a>
-	          </li>
-	          <li class="active-link">
-	            <a href="/prototipoWEB/html/IngresoDatos.html"> <i class="fa fa-desktop "></i>Ingreso datos<span class="badge"></span></a>
-	          </li>
-	          <li >
-	            <a href="/prototipoWEB/html/Metricas.jsp"> <i class="fa fa-table "></i>Metricas <span class="badge"></span></a>
-	          </li>
-	          <li >
-	            <a href="/prototipoWEB/html/opendata.html"> <i class="fa fa-bar-chart-o"> </i>Open data</a>
-	          </li>
-	        </ul>
-	      
-	     </div>
-	    </nav>
-		
-		<div id="page-wrapper" >
-	          <div id="page-inner">
-	          	<div class="container">
-	      			<div class="jumbotron">
-	        			<h1>Ingrese los ID´s</h1>
-	        			<p class="lead">
-	        				Los id´s deben ir separados por comas (xxxx,xxxx,xxxx)<br>
-	        				<form method="post" action="/prototipoWEB/recibirDatosServlet">
-								Ingrese los ID´S:
-								<input type="text" name="ids" class="form-control"><br>
-								Ingrese el dominio:
-								<input type="text" name="domain" class="form-control"><br>
-								<input type="submit" value="enviar" class="form-control">
-							</form>
-	        			</p>
-	      			</div>
-	    		</div>
-	          </div>
-         </div>
-	    <script
-  src="https://code.jquery.com/jquery-3.2.1.min.js"
-  integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
-  crossorigin="anonymous"></script>
-  	
 
-	</div>
-</body>
+            <div class="clearfix"></div>
+
+          
+            <br />
+
+            <!-- sidebar menu -->
+            <div id="sidebar-menu" class="main_menu_side hidden-print main_menu">
+              <div class="menu_section">
+                <h3>General</h3>
+                <ul class="nav side-menu">
+                  <li><a href="/prototipoWEB/html/IngresoDatos.html"><i class="fa fa-database"></i> Ingreso datos </a>
+                   
+                  </li>
+                  <li><a href="/prototipoWEB/Metricas"><i class="fa fa-bar-chart"></i> Calidad </span></a>
+                   
+                  </li>
+                  <li><a href="/prototipoWEB/html/opendata.html"><i class="fa fa-check-square-o"></i> Madurez </a>
+                   
+                  </li>
+                  
+                </ul>
+              </div>
+              
+
+            </div>
+            <!-- /sidebar menu -->
+
+            <!-- /menu footer buttons -->
+            <div class="sidebar-footer hidden-small">
+              <a data-toggle="tooltip" data-placement="top" title="Settings">
+                <span class="glyphicon glyphicon-cog" aria-hidden="true"></span>
+              </a>
+              <a data-toggle="tooltip" data-placement="top" title="FullScreen">
+                <span class="glyphicon glyphicon-fullscreen" aria-hidden="true"></span>
+              </a>
+              <a data-toggle="tooltip" data-placement="top" title="Lock">
+                <span class="glyphicon glyphicon-eye-close" aria-hidden="true"></span>
+              </a>
+              <a data-toggle="tooltip" data-placement="top" title="Logout" href="login.html">
+                <span class="glyphicon glyphicon-off" aria-hidden="true"></span>
+              </a>
+            </div>
+            <!-- /menu footer buttons -->
+          </div>
+        </div>
+
+        <!-- top navigation -->
+        <div class="top_nav">
+          <div class="nav_menu">
+            <nav>
+              <div class="nav toggle">
+                <a id="menu_toggle"><i class="fa fa-bars"></i></a>
+              </div>
+
+              <br>
+            </nav>
+          </div>
+        </div>
+        <!-- /top navigation -->
+
+        <!-- page content -->
+        <div class="right_col" role="main">
+        
+        
+        
+        <div class="container">
+  <h2>Prototipo</h2>
+  <div class="panel panel-default">
+    <div class="panel-heading">Ingrese losID´S</div>
+    <div class="panel-body">
+    	<form method="post" action="/prototipoWEB/recibirDatosServlet">
+        <div class="text-center"> <h1>Ingrese los ID´s</h1></div>
+        <div class="row">
+        	<div class="col-md-3 col-md-offset-3">Ingrese los ID´S:Los id´s deben ir separados por comas (xxxx,xxxx,xxxx)
+								<input type="text" name="ids" class="form-control">
+			</div>
+        	<div class="col-md-3">Ingrese el dominio:<br><br>
+								<input type="text" name="domain" class="form-control"><br>
+			</div>
+        	<div class="col-md-1"><br><br><input type="submit" value="enviar" class="form-control"></div>
+        </div>
+        </form>
+    
+    
+    </div>
+  </div>
+</div>
+        
+          
+         
+	        		
+        </div>
+        <!-- /page content -->
+
+        <!-- footer content -->
+        <footer>
+          <div class="pull-right">
+            Gentelella - Bootstrap Admin Template by <a href="https://colorlib.com">Colorlib</a>
+          </div>
+          <div class="clearfix"></div>
+        </footer>
+        <!-- /footer content -->
+      </div>
+    </div>
+
+    <!-- jQuery -->
+    <script src="http://localhost:8080/prototipoWEB/vendors/jquery/dist/jquery.min.js"></script>
+    <!-- Bootstrap -->
+    <script src="http://localhost:8080/prototipoWEB/vendors/bootstrap/dist/js/bootstrap.min.js"></script>
+    <!-- FastClick -->
+    <!-- Custom Theme Scripts -->
+    <script src="http://localhost:8080/prototipoWEB/build/js/custom.min.js"></script>
+
+  </body>
 </html>
