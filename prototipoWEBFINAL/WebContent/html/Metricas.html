@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Top navbar example for Bootstrap</title>
+
+    <link href="../css/bootstrap.css" rel="stylesheet" />
+     <!-- FONTAWESOME STYLES-->
+    <link href="../css/font-awesome.css" rel="stylesheet" />
+        <!-- CUSTOM STYLES-->
+    <link href="../css/custom.css" rel="stylesheet" />
+     <!-- GOOGLE FONTS-->
+   <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css' />
+  </head>
+
+  <body>
+	<div id="wrapper">
+		<div class="navbar navbar-inverse navbar-fixed-top">
+            <div class="adjust-nav">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".sidebar-collapse">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="#">
+                        <img src="../img/logo.png" />
+
+                    </a>
+                    
+                </div>
+              
+                <span class="logout-spn" >
+                  <!-- <a href="#" style="color:#fff;">LOGOUT</a>   -->
+
+                </span>
+            </div>
+        </div>
+	
+	    <nav class="navbar-default navbar-side" role="navigation">
+	    <div class="sidebar-collapse">
+	          
+	      
+	        <ul class="nav" id="main-menu">
+	           <li>
+	          	<a href="/Madurez.java/html/prototipo.html"><i class="fa fa-bar-chart-o"></i>Prototipo</a>
+	          </li>
+	          <li class="active-link">
+	            <a href="/Madurez.java/html/IngresoDatos.html"> <i class="fa fa-desktop "></i>Ingreso datos<span class="badge"></span></a>
+	          </li>
+	          <li >
+	            <a href="/Madurez.java/Metricas"> <i class="fa fa-table "></i>Metricas <span class="badge"></span></a>
+	          </li>
+	          <li >
+	            <a href="/Madurez.java/html/opendata.jsp"> <i class="fa fa-bar-chart-o"> </i>Open data</a>
+	          </li>
+	        </ul>
+	      
+	     </div>
+	    </nav>
+	  
+	    <div id="page-wrapper" >
+	          <div id="page-inner">
+	          	<div class="container">
+      				<div class="jumbotron">
+      				<h1>Metricas</h1>
+      				<div class="text-center">
+      					<iframe  scrolling="no" style="border-width:0px;" src="http://jose-xps:8980/api/rest/public/process/datos?"></iframe>
+      					<iframe scrolling="no" style="border-width:0px;" src="http://jose-xps:8980/api/rest/public/process/datos2?" width="400" height="300"></iframe>
+      				</div>
+      				<div class="row">
+      					<div class="col-md-6">
+      						<h2>Completness</h2>
+        					<br>
+        					<iframe  scrolling="no" style="border-width:0px;" src="http://jose-xps:8980/api/rest/public/process/completness?&amp;width=500&amp;height=500" width="500" height="500"></iframe>
+      					</div>
+                         <div class="col-md-6">
+                         
+                         	Porcentaje de datos completos en fuente, datos de creacion y actualización.
+                         	
+                         </div>
+                     </div>
+                     <div class="row">
+                         <div class="col-md-6">
+                         
+                         Porcentaje de celdas completas y porcentaje de filas completas.
+                         </div>
+                         <div class="col-md-6">
+                         <h2>Traceability</h2>
+                         	<br>
+							<iframe  scrolling="no" style="border-width:0px;" src="http://jose-xps:8980/api/rest/public/process/traceability?&amp;width=500&amp;height=500" width="500" height="500"></iframe>
+      					
+                        	
+                         </div>
+                         
+                      </div>
+                      <div class="row">
+                         <div class="col-md-6">
+                         
+                         	<h2>compliance</h2>
+      						<br>
+							<iframe  scrolling="no"  style="border-width:0px;" src="http://jose-xps:8980/api/rest/public/process/compliance?&amp;width=500&amp;height=500" width="500" height="500"></iframe>
+                         </div>
+                         <div class="col-md-6">
+                         	Porcentaje de columnas con un estandar (formato asociado) y porcentaje de columnas que realmente cumplen este formato.
+                         </div>
+                         
+      				</div>
+        				
+        				
+      					
+      					
+      				</div>
+    			</div>
+	          </div>
+	    </div>      
+	</div>
+	<script
+  src="https://code.jquery.com/jquery-3.2.1.min.js"
+  integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+  crossorigin="anonymous"></script>
+  	
+	<script>
+
+$('a').onclick(function(){
+	
+	alert($(this).html());
+	
+});
+	</script>
+  </body>
+</html>
